@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the background covers the entire viewport */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Căn giữa hình ảnh trong body */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+img{
+    width: 200px;
+}
+
+.title {
+    display: inline-flex; /* Giữ inline-flex để phần tử chỉ rộng theo nội dung */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 0;
+    border-top: 1px solid black;
+}
+
+
+
+.title p {
+    margin: 0;
+    padding-right: 50px; 
+}
+
+.title button[type="submit"] {
+    border: none;
+}
+
+.choose{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.choose a {
+    text-decoration: none; /* Bỏ gạch dưới mặc định */
+    color: black; /* Màu văn bản mặc định */
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block; /* Để áp dụng padding cho liên kết */
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển màu nền */
+    text-align: center;
+}
+
+.choose a:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+.choose a:active {
+    background-color: #f0f0f0; /* Màu nền khi nhấn vào */
+}
+
+
+.inf{
+    padding-left: 500px;
+}
+

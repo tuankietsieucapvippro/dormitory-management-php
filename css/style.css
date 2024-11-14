@@ -1,0 +1,133 @@
+/* Style cho phần sidebar */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f5;
+    height: 100vh;
+    position: fixed;
+    top: 38px;
+    font-family: Arial, sans-serif;
+    z-index: 1;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #5AB7E4;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 0;
+    /* Bỏ padding của <li> để áp dụng vào <a> */
+    text-align: left;
+}
+
+.sidebar ul li:hover {
+    background-color: #5AB7E4;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 15px;
+    /* Thêm padding vào <a> */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+}
+
+/* Active link */
+.sidebar ul li a.active {
+    background-color: #5AB7E4;  /* Giữ màu nền khi active */
+    color: #fff;  /* Màu chữ khi active */
+}
+
+.sidebar ul li:hover a {
+    color: #fff;
+    /* Thay đổi màu chữ khi hover vào <li> */
+}
+
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    font-size: 24px;
+    color: #333;
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.logo img {
+    margin: 8px;
+    width: 66px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Định dạng cho header bar */
+.headerbar {
+    position: fixed; /* Để header không cố định mà nằm dưới sidebar */
+    top: 0;
+    left: 0; /* Đặt khoảng cách từ trái để header nằm dưới sidebar */
+    width: calc(100%); /* Đảm bảo header chiếm toàn bộ chiều rộng còn lại của màn hình */
+    background-color: #5AB7E4;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end; /* Căn phải cho nội dung trong header */
+    align-items: center;
+    z-index: 1; /* Đảm bảo header không bị che bởi các phần tử khác */
+}
+
+/* Định dạng cho phần thông tin chào mừng */
+.welcome-message {
+    margin-right: 20px; /* Thêm khoảng cách bên phải */
+    font-size: 16px;
+}
+
+/* Định dạng cho phần nút đăng xuất */
+.logout a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-right: 50px;
+}
+
+/* Thay đổi màu sắc khi hover vào nút đăng xuất */
+.logout a:hover {
+    background-color: #d32f2f;
+}

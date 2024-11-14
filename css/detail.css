@@ -1,0 +1,119 @@
+/* Căn giữa nút trong thẻ td */
+table tr:last-child td {
+    text-align: center; /* Căn giữa thẻ td chứa nút */
+}
+
+button {
+    width: auto; /* Để nút có kích thước vừa đủ */
+    margin: 0 auto; /* Căn giữa nút trong td */
+    display: block; /* Đảm bảo nút là một khối và căn giữa */
+}
+
+/* Những CSS khác đã có */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    width: 70%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 150px;
+}
+
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.preview-container img {
+    margin-right: 20px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+}
+
+.info-row input {
+    width: 100%;
+}
+
+.info-row p {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.info-row input[type="radio"] {
+    margin-left: 10px;
+}
+
+/* Style for Back button */
+.back-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}

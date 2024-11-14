@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the background covers the entire viewport */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Background styling for the entire page */
+.background {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    background-image: url('background1.jpg');
+    background-size: cover;  /* Make background cover the entire page */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;           /* Full viewport height */
+    width: 100%;             /* Full viewport width */
+}
+
+/* Main form container styling */
+.main {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;        /* Set a maximum width for the form */
+    text-align: center;
+}
+
+form{
+    padding: 55px 55px 54px 65px;
+}
+
+/* Style for the input container */
+.input {
+    position: relative;
+    margin: 20px 0;
+    padding: 0px 20px;
+}
+
+/* Label styling */
+.input-label {
+    font-size: 14px;
+    color: #000000;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+.input-wrapper {
+    display: flex;  /* Align items horizontally */
+    align-items: center;
+    border-bottom: 2px solid #ccc;  /* Bottom border for the input area */
+    padding-bottom: 5px;
+}
+
+/* Icon styling */
+.input-icon {
+    margin-right: 8px;  /* Space between icon and input */
+    color: #666;
+    font-size: 18px;
+}
+
+/* Input field styling */
+.input-field {
+    flex: 1;  /* Allow input to take remaining space */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    background: transparent;
+}
+
+/* Placeholder text disappears on focus */
+.input-field:focus::placeholder {
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+/* Bottom border animation */
+.input-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: width 0.4s ease;
+}
+
+/* Trigger animation on input focus */
+.input-field:focus ~ .input-wrapper::after {
+    width: 100%;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #6d6868;
+}
+
+.forgot{
+    text-align: right;
+    width: 90%;
+    padding-bottom: 20px;
+}
+
+/* Nút button */
+button {
+    background-color: #ff69b4;  /* Màu hồng */
+    width: 90%;
+    color: white;  /* Màu chữ trắng */
+    border: none;  /* Xóa viền */
+    padding: 10px 20px;  /* Khoảng cách giữa chữ và viền nút */
+    font-size: 16px;  /* Kích thước chữ */
+    cursor: pointer;  /* Thay đổi con trỏ chuột thành hình tay */
+    border-radius: 20px;  /* Bo tròn các góc của nút */
+    transition: background-color 0.3s ease;  /* Thêm hiệu ứng chuyển màu nền khi hover */
+}
+
+/* Khi di chuột vào nút (hover) */
+button:hover {
+    background-color: #5e22cd;  /* Màu xanh khi hover */
+}
+

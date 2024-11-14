@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+
+    <style>
+        /* Style cho phần sidebar */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f0f0f5;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #4a4a8a;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 0;
+            /* Bỏ padding của <li> để áp dụng vào <a> */
+            text-align: left;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #4a4a8a;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: block;
+            padding: 15px;
+            /* Thêm padding vào <a> */
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar ul li:hover a {
+            color: #fff;
+            /* Thay đổi màu chữ khi hover vào <li> */
+
+        }
+
+        /* Style cho phần nội dung chính */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .header {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .logo {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+
+        .logo img {
+            margin: 8px;
+            width: 66px;
+        }
+
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../images/logo-dai-hoc-nha-trang-inkythuatso.png" alt="NTU Logo">
+            <span>NTU</span>
+        </div>
+        <ul>
+            <li><a href="#">Quản lý tòa nhà</a></li>
+            <li><a href="#">Quản lý phòng</a></li>
+            <li><a href="#">Quản lý loại phòng</a></li>
+            <li><a href="#">Quản lý sinh viên</a></li>
+            <li><a href="#">Quản lý điện nước</a></li>
+            <li><a href="#">Quản lý tài khoản</a></li>
+            <li><a href="#">Quản lý Web</a></li>
+            <li><a href="#">Đăng xuất</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">Quản lý sinh viên</div>
+        <!-- Nội dung chính sẽ được đặt ở đây -->
+    </div>
+    
+</body>
+
+</html>
